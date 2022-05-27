@@ -25,7 +25,9 @@ function App() {
         }}
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: "20px",marginLeft: "10px"}}>
+          <div
+            style={{ display: "flex", fontSize: "20px", marginLeft: "10px" }}
+          >
             <Typical
               loop={1}
               // wrapper="b"
@@ -41,19 +43,20 @@ function App() {
               ]}
             />
           </div>
-          {showReqCallbackButton ? 
-          <div
-            style={{
-              width: "140px",
-              background: "red",
-              borderRadius: "999px",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: "15px",
-            }}
-          >
-            Request a Callback
-          </div> : null }
+          {showReqCallbackButton ? (
+            <div
+              style={{
+                width: "140px",
+                background: "red",
+                borderRadius: "999px",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "15px",
+              }}
+            >
+              Request a Callback
+            </div>
+          ) : null}
         </div>
         <div style={{ display: "flex" }}>
           <Lottie
@@ -67,7 +70,7 @@ function App() {
           />
         </div>
       </div>
-      <SectionA />
+      {/* <SectionA /> */}
       <SectionB />
       <SectionC />
     </div>
